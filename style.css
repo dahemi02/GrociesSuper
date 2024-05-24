@@ -1,0 +1,281 @@
+/*Stylesheet for Header, Body and Footer*/
+
+/*Styling the Body*/
+body{
+    background-color: #fff;
+    margin: auto;
+}
+
+/*Styling the Header*/
+header{
+    background-color: #276221;
+    padding: 5px;
+}
+
+/*Styling the header section*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1070px;
+    margin: auto;
+}
+
+/*Styling the Search Section*/
+.search{
+    align-items: center;
+    display: flex;
+
+}
+
+/*Styling the Search Bar*/
+.search input{
+    padding: 5px;
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+    font-size: 12pt;
+    border: 5px;
+    border-color: #67be6e;
+    border-style: solid;
+    margin: 20px;
+    background-color: antiquewhite;
+    width: 400px;
+}
+
+/*Styling the Icons Section*/
+.icons{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+}
+
+/*Styling the links in the Icons Section*/
+.icons a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+}
+
+/*Styling the Navigation Bar in the Header*/
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: #3b8132;
+    padding: 15px;
+    font-family: "Courier Prime", monospace;
+    font-size: 18pt;
+    font-weight: 700;
+}
+
+/*Styling the links in the Navigation Bar*/
+nav a{
+    color: cornsilk;
+    text-decoration: none;
+    padding: 20px;
+
+    &:hover{
+        color: burlywood;
+    }
+
+    &:active{
+        color: #a0a214;
+    }
+}
+
+/*Positioning the Dropdown Menu*/
+.dropdown{
+    padding: 20px;
+}
+
+/*Styling the content of the Dropdown Menu & Dropup Menu*/
+.dropdown-content, #dropup-content{
+    display: none;
+    position: absolute;
+    background-color: #3b8132;
+}
+
+/*Styling the links of the dropdown menu & dropup menu*/
+.dropdown-content a , #dropup-content a{
+    z-index: 500;
+    text-decoration: none;
+    display: block;
+    text-align: justify;
+    padding: 12px 16px;
+}
+
+/*Styling the colour of the links when the cursur hovers over it */
+.dropdown a:hover{
+    color: burlywood;
+}
+
+/*Styling the dropdown & dropup contents*/
+.dropdown:hover .dropdown-content , #dropup:hover #dropup-content{
+    display: block;
+}
+
+/*Styling the Footer*/
+footer{
+    background-color: #46923c;
+    padding: 10px;
+}
+
+footer, .footer-logo a, #contct h3{
+    color: #fff;
+}
+
+/*Styling the Logo and the name*/
+.footer-logo{
+    display: flex;
+    padding: 10px;
+}
+
+/*Styling the logo in the footer*/
+.footer-logo a img{
+    padding: 10px;
+}
+
+/*Styling the name*/
+.footer-logo a{
+    text-decoration: none;
+    font-size: 16pt;
+}
+
+/*Styling the container in the footer*/
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Styling the Contact section*/
+#contact h3{
+    font-size: 16pt;
+}
+
+#contact p{
+    font-size: 14pt;
+}
+
+/*Styling the Navigation Bar in the Footer*/
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    background-color: #37833e;
+    padding: 10px;
+    font-family: "Courier Prime", monospace;
+    font-size: 15pt;
+    font-weight: 300;
+}
+
+/*Styling the links navigation bar in the footer*/
+.footer-nav a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+
+    &:hover{
+        color: #d2b48c;
+    }
+}
+
+/*Styling the Dropup Menu*/
+#dropup{
+    padding: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+/*Styling the content of the Dropup Menu*/
+#dropup-content{
+    bottom: 50px;
+    background-color: #37833e;
+}
+
+/*Styling the Social Media section*/
+.social a{
+    text-decoration: none;
+    margin: 5px;
+}
+
+/*Styling the Copyright Section*/
+.copy{
+    text-align: center;
+}
+
+
+
+/*Mobile Resposiveness*/
+
+/*Responsive Header and Footer*/
+@media screen and (max-width: 425px) {
+    .header,
+    footer{
+        width: 100%;
+    }
+}
+
+/*Header at 768px Responsiveness*/
+@media screen and (max-width: 768px) {
+
+    /*Header*/
+    .header{
+        flex-direction: column;
+    }
+
+    /*Search Bar*/
+    .search input{
+        width: 350px;
+        padding: 10px;
+    }
+}
+
+/*earch Bar at 425px Responsiveness*/
+@media screen and (max-width: 425px) {
+
+    .search input{
+        width: 150px;
+        padding: 8px;
+    }
+}
+
+/*Responsive Navigation Bar*/
+@media screen and (max-width: 680px) {
+
+    /*Navigation Bars in the header and the footer*/
+    nav{
+        flex-direction: column;
+        font-size: 2em;
+    }
+
+    /*Dropdown menu*/
+    .dropdown{
+        padding: 5px;
+    }
+
+}
+
+/*Footer at 1050px Responsiveness*/
+@media screen and (max-width: 1050px) {
+
+    /*Footer-container*/
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+        font-size: 2em;
+    }
+
+    /*Text in the footer-nav*/
+    .footer-nav{
+        display: none;
+    }
+
+    /*copy class in the footer*/
+    .copy{
+        font-size: 20pt;
+    }
+}
