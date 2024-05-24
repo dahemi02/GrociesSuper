@@ -1,0 +1,128 @@
+/*Order Page CSS*/
+
+/*Styling the placing of content in the page*/
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/*Centering the table*/
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Styling the text alignment in headings in the order-form section and payment and button sections*/
+.order-form h1, .order-form h2, .payment, .button{
+    text-align: center;
+}
+
+/*Styling the border*/
+.order-form .billing input, textarea, 
+.payment .payment-methods input,
+.payment-details table tr td input{
+    border: 5px solid #d3b683;
+}
+
+/*Styling the billing and the payment sections*/
+.billing, .payment{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18pt;
+}
+
+/*Styling the input & textarea in the table*/
+table input, table textarea{
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+/*Styling the heading 1 & heading 2 in the order-form section*/
+.order-form h1, .order-form h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+/*Styling the heading 3 in the order-form section*/
+.order-form h1{
+    font-size: 35pt;
+}
+
+/*Styling the headng 2 in order-form section*/
+.order-form h2{
+    font-size: 25pt;
+}
+
+/*Styling the order-form section*/
+.order-form{
+    background-color: #fffdd0;
+    padding: 20px;
+    border: 3px solid #000;
+}
+
+/*Styling the checkout button*/
+form button{
+    padding: 10px 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+    color: #000;
+    background-color:#fff ;
+    transition: all ease 0.3s;
+
+    /*Add to Cart when cursor hovers over it*/
+    &:hover{
+        color: #fff;
+        background-color: #000;
+        transition: all ease 0.3s;
+    }
+}
+
+
+
+/*Mobile Responsiveness*/
+@media screen and (max-width: 650px) {
+
+    /*Labels in billing, payment-methods, payment-details classes*/
+    .billing label,
+    .payment .payment-methods input,
+    .payment-details label{
+        font-size: 23pt;
+    }
+
+    /*Width of the input*/
+    .billing input,
+    .billing textarea,
+    .payment-details table tr td input{
+        width: 250px;
+    }
+
+}
+
+/*Table data at 540px Responsiveness*/
+@media screen and (max-width: 540px) {
+
+    .billing table tr td,
+    .payment-details table tr td{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/*Width*/
+@media screen and (max-width: 380px) {
+    
+    /*Width of the input*/
+    .billing input, 
+    .billing textarea,
+    .payment-details table tr td input{
+        width: 175px;
+    }
+
+    
+
+}
