@@ -1,0 +1,150 @@
+/*Vegetables Page CSS*/
+
+/*Styling the placing of content in the page*/main{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/*Styling the Add to Cart button*/
+.cart{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #78c57e;
+    letter-spacing: 0.8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: all ease 0.3s;
+
+    /*Styling the Add to cart button when the cursor hovers over it*/
+    &:hover{
+        background-color: #bde3c0;
+        transition: all ease 0.3s;
+    }
+}
+
+/*Styling the headings*/
+h1, h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #000;
+
+}
+
+/*Styling the heading 1*/
+h1{
+    font-size: 40px; 
+    font-style: italic;
+}
+
+/*Styling the heading 2 in supplier-category*/
+.supplier-category h2{
+    font-size: 20pt;
+    color: #43a04b;
+}
+
+/*Styling the heading 2 in vegetables-grid section*/
+.vegetables-grid h2{
+    font-size: 25pt;
+    font-style: oblique;
+}
+
+/*Styling the text in the supplier-category section*/
+.supplier-category p{
+    font-family: "Playfair Display", sans-serif;
+    font-size: 16pt;
+    word-spacing: 5px;
+}
+
+/*Styling the vegetables-grid section*/
+.vegetables-grid{
+    padding: 10px 0;
+}
+
+/*Styling the grid-container section*/
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+/*Styling the grid-item section*/
+.grid-item{
+    border: 3px solid #000;
+    border-radius: 10px;
+    background-color: #fffdd0;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Styling the text in the grid-item section*/
+.grid-item p{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/*Styling the liks in the grid-item section*/
+.grid-item a{
+    font-family: "Platypi", serif;
+    color: #000;
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: 600px;
+}
+
+
+/*Mobile Responsiveness*/
+
+/*vegetables banner responsiveness at 700px*/
+@media screen and (max-width: 700px) {
+    .vegetables-intro img{
+        height: 350px;
+    }
+}
+
+/*vegetables banner responsiveness at 500px*/
+@media screen and (max-width: 500px) {
+    .vegetables-intro img{
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    /*Heading 1*/
+    h1{
+        font-size: 3em;
+    }
+
+    /*Heading 2 in suppliers class*/
+    .supplier-category h2{
+        font-size: 30pt;
+    }
+
+    /*Paragraph in the supplier-category*/
+    .supplier-category p{
+        font-size: 28pt;
+    }
+
+    /*Heading 2 in vegetables-grid*/
+    .vegetables-grid h2{
+        font-size: 35pt;
+    }
+
+    /*Paragraph in grid-item class*/
+    .grid-item p{
+        font-size: 25pt;
+    }
+
+    /*Text in the cart class*/
+    .grid-item .cart{
+        font-size: 23pt;
+    }
+}

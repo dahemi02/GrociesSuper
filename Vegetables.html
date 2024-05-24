@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grocies </title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Platypi:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./vegetables.css" type="text/css">
+</head>
+
+<body>
+
+    <header>
+
+        <section class="header">
+
+            <!--Logo-->
+            <a href="./Index.html" target="_self"><img src="./Logo.png" alt="Logo" width="200" height="200"></a>
+
+            <!--Icons-->  
+            <section class="search">
+
+                <!--Search Bar-->
+                <input type="search" placeholder="Search Here..." name="search bar">
+
+                <section class="icons">
+
+                     <!--Search icon-->
+                    <a href="#">
+                    <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffffff;"></i>
+                    </a>
+
+                    <!--Cart icon-->
+                    <a href="./Order.html">
+                    <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #ffffff;"></i>
+                    </a>
+
+                </section>
+
+            </section>
+
+        </section>
+        
+        <!--Navigation Bar-->
+        <nav>
+
+           <a href="./Index.html" target="_self"> Home </a>
+           <a href="./About Us.html" target="_self"> About Us </a>
+
+            <!--Dropdown menu displaying all the product categories-->
+            <section class="dropdown">
+
+                <!--Dropdown Menu-->
+                <a href="#" target="_self">  All Categories </a>
+
+                <section class="dropdown-content">
+                    <a href="#" target="_self"> Beverages </a>
+                    <a href="./Cosmetic.html" target="_self"> Cosmetics & Skin Care </a>
+                    <a href="./Dairy.html" target="_self"> Dairy </a>
+                    <a href="#" target="_self"> Frozen Food </a>
+                    <a href="#" target="_self"> Fruits </a>
+                    <a href="#" target="_self"> Gift Vouchers </a>
+                    <a href="#" target="_self"> Household Items </a>
+                    <a href="./Vegetables.html" target="_self"> Vegetables</a>
+                </section>
+
+            </section>
+
+            <a href="./Order.html" target="_self"> Order </a>
+            <a href="./Loyalty.html" target="_self"> Loyalty </a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!--Introduction-->
+        <section class="vegetables-intro">
+
+            <!--Vegetables Banner-->
+            <img src="./Vegetables Banner.png" alt="Vegetables Banner" width="100%" height="500px">
+
+        </section>
+        
+        <br>
+
+        <h1> Freshest Vegetables Come From...</h1>
+
+        <!--Suppliers-->
+
+        <h1> Suppliers </h1>
+        
+        <section class="suppliers">
+
+            <!--Supplier 1-->
+            <section class="supplier-category">
+
+                <h2> Sunset Farms, Nuwara Eliya </h2>
+                <p> Located in the the hillside of Sri Lanka, Sunset farms in Nuwara Eliya has always been famous for providing fresh, organic vegetables for the people in Sri Lanka. The Farmers dedication to sustainable farming practices ensures that you get the healthiest produce possible. </p>
+
+            </section>
+
+            <br>
+
+            <section class="supplier-category">
+
+                <h2> Freshness Well, Bandarawela </h2>
+                <p> Freshness Well farms in Bandarawela vegetable farms provides vegetables from community gardens and urban farms. We focus on and collect local, pesticide-free produce, supporting agriculture and reducing the carbon footprint associated with food transportation. </p>
+                
+            </section>
+            
+            <br>
+
+            <section class="supplier-category">
+
+                <h2> Veggies, Badulla </h2>
+                <p> Situated in Uva Province of Sri Lanka, Veggies farm in Badulla specializes in hydroponically grown vegetables. Their innovative techniques allow them to produce high-quality, fresh vegetables year-round, regardless of weather conditions. </p>
+                
+            </section>
+
+        </section>
+
+        <br>
+        <br>
+
+        <section class="vegetables-grid">
+
+            <h2> Vegetables </h2>
+
+            <section class="grid-container">
+
+                <section class="grid-item">
+
+                    <img src="./carrots.png" alt="Carrots" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Carrots </p>
+                    <p> 1kg </p>
+                    <p> Rs. 100.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./beans.png" alt="Beans" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Beans </p>
+                    <p> 1kg </p>
+                    <p> Rs. 320.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./cabbage.png" alt="Cabbage" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Cabbage </p>
+                    <p> 1kg </p>
+                    <p> Rs. 150.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./beetroot.png" alt="Beetroot" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Beetroot </p>
+                    <p> 1kg </p>
+                    <p> Rs. 120.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./curry-leaves.png" alt="Curry Leaves" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Curry Leaves </p>
+                    <p> 1 Bunch </p>
+                    <p> Rs. 60.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./bell-pepper.png" alt="Bell Pepper" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Bell Pepper </p>
+                    <p> 1kg </p>
+                    <p> Rs. 500.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./dried-red-chilli.png" alt="Dried Red Chillie" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Dried Red Chillie </p>
+                    <p> 1kg </p>
+                    <p> Rs. 850.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./green-chilli.png" alt="Green Chillie" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Green Chillie </p>
+                    <p> 1kg </p>
+                    <p> Rs. 120.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./red-chilli.png" alt="Red Chillie" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Red Chillie </p>
+                    <p> 1kg </p>
+                    <p> Rs. 150.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./capsicum.png" alt="Capsicum" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Capsicum </p>
+                    <p> 1kg </p>
+                    <p> Rs. 150.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./ladies-finger.png" alt="Ladies Fingers" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Ladies Fingers </p>
+                    <p> 1kg </p>
+                    <p> Rs. 120.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./leeks.png" alt="Leeks" width="200" height="175">
+                    
+                    <!--Product Details-->
+                    <p> Leeks </p>
+                    <p> 1kg </p>
+                    <p> Rs. 150.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./pumpkin.png" alt="Pumpkin" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Pumpkin </p>
+                    <p> 1kg </p>
+                    <p> Rs. 150.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./cucumber.png" alt="Cucumber" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Cucumber </p>
+                    <p> 1kg </p>
+                    <p> Rs. 130.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+
+                    <img src="./winged-bean.png" alt="Winged Beans" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Winged Beans </p>
+                    <p> 1kg </p>
+                    <p> Rs. 180.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+                    
+                    <img src="./tomatoes.png" alt="Tomatoes" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Tomatoes </p>
+                    <p> 1kg </p>
+                    <p> Rs. 100.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+                    
+                    <img src="./Brinjal.png" alt="Brinjal" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Brinjal </p>
+                    <p> 1kg </p>
+                    <p> Rs. 120.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+                    
+                    <img src="./ash-banana.png" alt="Ash Banana" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Ash Banana </p>
+                    <p> 1kg </p>
+                    <p> Rs. 100.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+                    
+                    <img src="./bitter-gourd.png" alt="Bitter Gourd" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Bitter Gourd </p>
+                    <p> 1kg </p>
+                    <p> Rs. 180.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+                <section class="grid-item">
+                    
+                    <img src="./snake_gaurd.png" alt="Snake Gourd" width="200" height="175">
+
+                    <!--Product Details-->
+                    <p> Snake Gourd </p>
+                    <p> 1kg </p>
+                    <p> Rs. 200.00 </p>
+
+                    <!--Add to Cart button-->
+                    <a href="./Order.html" class="cart">
+                        <span> Add to Cart </span>
+                        <i class="fa-solid fa-cart-shopping fa-sm"></i> 
+                    </a>
+                    
+                </section>
+
+            </section>
+
+        </section>
+
+    </main>
+    <br>
+
+    <footer>
+
+        <section>
+
+            <!--Logo and the name-->   
+
+            <section class="footer-logo">
+
+                <!--Footer Logo-->
+                <a href="./index.html">
+                    <img src="./Logo.png" alt="logo" width="100" height="100"> 
+                </a>  
+                
+                <!--Name-->
+                <a href="./index.html">
+                    <h2> Grocies Supermarket </h2>
+                </a>
+
+            </section>
+
+            <!--Contact Information and Social Media-->
+
+            <section class="footer-container">
+
+                <!--Contact Information-->
+
+                <section id="contact">
+
+                    <h3> Contact Us</h3>
+                    <p> Colombo - 011 857 6843 </p>
+                    <p> Kandy - 081 123 3456</p>
+                
+                </section>
+
+                <br>
+            
+                <!--Navigation Bar at the footer-->
+                <section class="footer-nav">
+
+                    <a href="./index.html" target="_self"> Home </a>
+                    <a href="./About Us.html" target="_self"> About Us </a>
+
+                    <!--Dropup menu displaying all the product categories-->
+                    <section id="dropup">
+
+                        <!--Dropup Menu-->
+                        <a href="#" target="_self">  All Categories </a>
+                        
+                        <section id="dropup-content">
+                            <a href="#" target="_self"> Beverages </a>
+                            <a href="./Cosmetic.html" target="_self"> Cosmetics & Skin Care </a>
+                            <a href="./Dairy.html" target="_self"> Dairy </a>
+                            <a href="#" target="_self"> Frozen Food </a>
+                            <a href="#" target="_self"> Fruits </a>
+                            <a href="#" target="_self"> Gift Vouchers </a>
+                            <a href="#" target="_self"> Household Items </a>
+                            <a href="./Vegetables.html" target="_self"> Vegetables</a>
+                        </section>
+
+                    </section>
+
+                    <a href="./Order.html" target="_self"> Order </a>
+                    <a href="./Loyalty.html" target="_self"> Loyalty </a>
+
+                </section>
+
+                <br>
+            
+                <!--Social Media links-->
+
+                <section class="social">
+
+                    <!--Facebook Icon-->
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
+                    </a>
+
+                    <!--Instagram Icon-->
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+                    </a>
+
+                    <!--Twitter Icon-->
+                    <a href="#">
+                        <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+                    </a>
+
+                    <!--Tiktok Icon-->
+                    <a href="#">
+                        <i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff;"></i>
+                    </a>
+
+                </section>
+
+            </section>
+
+            <br>
+
+            <!--Copyright-->
+
+            <section class="copy">
+                <p> &copy; 2024 Grocies. All Rights Reserved. </p>
+            </section>
+
+        </section>   
+
+    </footer>
+
+</body>
+
+</html>
