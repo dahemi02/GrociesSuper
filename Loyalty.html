@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grocies </title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Platypi:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedan+SC&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <!--Font Awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./loyalty.css" type="text/css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <section class="header">
+
+            <!--Logo-->
+            <a href="./Index.html" target="_self"><img src="./Logo.png" alt="Logo" width="200" height="200"></a>
+
+            <!--Icons-->  
+            <div class="search">
+
+                <!--Search Bar-->
+                <input type="search" placeholder="Search Here..." name="search bar">
+
+                <section class="icons">
+
+                     <!--Search icon-->
+                    <a href="#">
+                    <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #ffffff;"></i>
+                    </a>
+
+                    <!--Cart icon-->
+                    <a href="./Order.html">
+                    <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #ffffff;"></i>
+                    </a>
+
+                </section>
+
+            </section>
+
+        </section>
+
+        <!--Navigation Bar-->
+        <nav>
+
+           <a href="./Index.html" target="_self"> Home </a>
+           <a href="./About Us.html" target="_self"> About Us </a>
+
+            <!--Dropdown menu displaying all the product categories-->
+            <section class="dropdown">
+
+                <!--Dropdown Menu-->
+                <a href="#" target="_self">  All Categories </a>
+
+                <section class="dropdown-content">
+                    <a href="#" target="_self"> Beverages </a>
+                    <a href="./Cosmetic.html" target="_self"> Cosmetics & Skin Care </a>
+                    <a href="./Dairy.html" target="_self"> Dairy </a>
+                    <a href="#" target="_self"> Frozen Food </a>
+                    <a href="#" target="_self"> Fruits </a>
+                    <a href="#" target="_self"> Gift Vouchers </a>
+                    <a href="#" target="_self"> Household Items </a>
+                    <a href="./Vegetables.html" target="_self"> Vegetables</a>
+                </section>
+
+            </section>
+
+            <a href="./Order.html" target="_self"> Order </a>
+            <a href="./Loyalty.html" target="_self"> Loyalty </a>
+
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <!--Introduction to Loyalty Page-->
+        <section id="intro-loyalty">
+
+            <img src="./Loyalty Banner.png" alt="Loyalty Page Banner" width="100%" height="500">
+
+            <br>
+            <hr>
+
+            <p> The loyalty programme of Grocies Supermarket ensures that our customers receives the full benifits of using our services. You can register or cancel any time you want with free as well as paid plans. </p>
+            
+            <hr>
+
+        </section>
+
+        <br>
+        <br>
+
+        <!--Form asking for customer details-->
+        <section id="form">
+
+            <h1> Grocies Supermarket Loyalty Registration </h1>
+
+            <br>
+
+            <form action="#" method="post">
+
+                <section class="form-container">
+
+                    <table>
+
+                        <!--First Name-->
+                        <tr>
+
+                            <td> <label for="fisrtname"> First Name </label> </td>
+                            <td> <input type="text" id="firstname" name="firstname" size="20" required> </td>   
+
+                        </tr>
+
+                        <!--Last Name-->
+                        <tr>
+
+                            <td> <label for="lastname"> Last Name </label> </td>
+                            <td> <input type="text" id="lastname" name="lastname" size="20" required> </td>   
+
+                        </tr>
+
+                        <!--Date of Birth-->
+                        <tr>
+
+                            <td> <label for="dob"> Date Of Birth </label> </td>
+                            <td> <input type="date" id="dob" name="dob" required> </td>      
+
+                        </tr>
+
+                        <!--Gender-->
+                        <tr>
+                            
+                            <td>  <label> Gender </label> </td>
+
+                            <!--Gender Dropdown-->
+                            <td>
+                                <select name="gender" id="gender">
+                                    <option value="S"> Select Gender </option>
+                                    <option value="M"> Male </option>
+                                    <option value="F"> Female </option>
+                                    <option value="N"> Non-Binary </option>
+                                </select>
+                            </td>
+
+                        </tr>
+
+                        <!--Email Address-->
+                        <tr>
+
+                            <td> <label for="email"> Email Address </label> </td>
+                            <td> <input type="email" id="email" name="email" required> </td>
+
+                        </tr>
+
+                        <!--Phone Number-->
+                        <tr>
+
+                            <td> <label for="phone"> Phone Number </label> </td>
+                            <td> <input type="tel" id="phone" name="phone" required> </td>
+
+                        </tr>
+
+                        <!--Address-->
+                        <tr>
+
+                            <td> <label for="address"> Address </label> </td>
+                            <td> <textarea name="address" id="address" cols="30" rows="5" required></textarea> </td>
+
+                        </tr>
+
+                    </table>
+
+                </section>
+
+                <!--Four Loyalty Schemes-->
+                <h1> Our Loyalty Schemes </h1>
+
+                <h3> Choose one of these loyalty schemes </h3>
+
+                <!--Basic & Standard Loyalty Schemes-->
+                <section id="loyalty">
+                    
+                    <section class="loyalty-schemes">
+
+                        <!--Basic Loyalty Scheme-->
+                        <input type="radio" name="loyalty" value="B"> 
+                        <label for="standard"> Basic </label>
+
+                        <h3> Benefits </h3>
+
+                        <!--Basic Scheme Benefits List-->
+                        <ul>
+                            <li><b> Free </b></li>
+                            <li> Access to exclusive email offers and promotions </li>
+                            <li> Earn points with every purchase - 1 point </li>
+                            <li> Buy products with the points you earn </li>
+                        </ul>
+
+                    </section>
+
+                    <br>
+                    <hr>
+
+                    <section class="loyalty-schemes">
+
+                        <!--Standard Loyalty SCheme-->
+                        <input type="radio" name="loyalty" value="S"> 
+                        <label for="standard"> Standard </label>
+
+                        <h3> Benefits </h3>
+
+                        <!--Standard Scheme Benefits List-->
+                        <ul>
+                            <li><b> $5 </b></li>
+                            <li>Birthday discount of 15% </li>
+                            <li> Additional discounts on special holidays - 10% </li>
+                            <li> Enhanced points earning - 2 points each </li>
+                            <li> Early access to promotions and sales </li>
+                        </ul>
+
+                    </section>
+
+                    <br>
+
+                </section>
+
+                <br>
+
+                <!--Deluxe & Premium Loyalty Schemes-->
+                <section id="loyalty">
+
+                    <section class="loyalty-schemes">
+
+                        <!--Deluxe Loyalty Scheme-->
+                        <input type="radio" name="loyalty" value="D"> 
+                        <label for="deluxe"> Deluxe </label>
+
+                        <h3> Benefits </h3>
+
+                        <!--Deluxe Scheme Benefits List-->
+                        <ul>
+                            <li><b> $10 </b></li>
+                            <li> Free gift on your birthday </li>
+                            <li> Increased points earning - 3 points each </li>
+                            <li> Personalized discounts based on the purchase history - 20% </li>
+                        </ul>
+
+                    </section>
+
+                    <br>
+                    <hr>
+
+                    <section class="loyalty-schemes">
+
+                        <!--Premium Loyalty Scheme-->
+                        <input type="radio" name="loyalty" value="P">
+                        <label for="Premium"> Premium </label>
+
+                        <h3> Benefits </h3>
+
+                        <!--Premium Scheme Loyalty Scheme-->
+                        <ul>
+                            <li><b> $15 </b></li>
+                            <li> Free Luxury gift ox quarterly </li>
+                            <li> Highest points earning - 5 points each </li>
+                            <li> VIP access to exclusive prolducts or details </li>
+                            <li> Complimentary upgrades or gifts on select purchases </li>
+                            <li> Discounts for the favorite products - 30% </li>
+                       </ul>
+
+                    </section>
+
+                </section>
+
+                <br>
+
+                <!--Terms and Conditions of the loyalty programme-->
+                <h1> Terms & Condition </h1>
+
+                <section class="terms">
+
+                    <!--Terms & Conditions List-->
+                    <ol>
+                        <li> Participation in the loyalty programme is open to all customers of Grocies Supermarket who are at least 18 years of age. </li>
+                        <li> We offer free as well as paid memberships in the loyalty programme. Customers may join the programme by completing the registration proces online.</li>
+                        <li>  Members earn points on qualifying purchases made at Grocies Supermarket. Points are awarded based on the purchase amount and may vary depending on the loyalty scheme chosen. </li>
+                        <li> Points may be redeemed for discounts, rewards, or other benefits as outlined in the loyalty scheme selected by the member. Points have no cash value and cannot be exchanged for cash. </li>
+                        <li> Grocies Supermarket reserves the right to modify, suspend, or terminate the loyalty program or any of its benefits at any time without prior notice. Any changes will be communicated to members via email or on the Grocies Supermarket website. </li>
+                        <li> Grocies Supermarket reserves the right to terminate or suspend a member's participation in the loyalty program if the member violates these terms and conditions or engages in fraudulent activity. </li>
+                    </ol>
+
+                </section>
+
+                <br>
+                <br>
+
+                <!--Submit and Reset Buttons-->
+                <section class="buttons">
+
+                    <button type="submit" id="submit"> Submit </button>
+                    <button type="reset" id="clear-all"> Clear All </button>
+
+                </section>
+
+            </form>
+
+        </section>
+
+    </main>
+    
+    <br>
+
+    <footer>
+
+        <section>
+
+            <!--Logo and the name-->   
+
+            <section class="footer-logo">
+
+                <!--Footer Logo-->
+                <a href="./index.html">
+                    <img src="./Logo.png" alt="logo" width="100" height="100"> 
+                </a>  
+                
+                <!--Name-->
+                <a href="./index.html">
+                    <h2> Grocies Supermarket </h2>
+                </a>
+
+            </section>
+
+            <!--Contact Information and Social Media-->
+
+            <section class="footer-container">
+
+                <!--Contact Information-->
+
+                <section id="contact">
+
+                    <h3> Contact Us</h3>
+                    <p> Colombo - 011 857 6843 </p>
+                    <p> Kandy - 081 123 3456</p>
+                
+                </section>
+
+                <br>
+            
+                <!--Navigation Bar at the footer-->
+                <section class="footer-nav">
+
+                    <a href="./index.html" target="_self"> Home </a>
+                    <a href="./About Us.html" target="_self"> About Us </a>
+
+                    <!--Dropup menu displaying all the product categories-->
+                    <section id="dropup">
+
+                        <!--Dropup Menu-->
+                        <a href="#" target="_self">  All Categories </a>
+                        
+                        <section id="dropup-content">
+                            <a href="#" target="_self"> Beverages </a>
+                            <a href="./Cosmetic.html" target="_self"> Cosmetics & Skin Care </a>
+                            <a href="./Dairy.html" target="_self"> Dairy </a>
+                            <a href="#" target="_self"> Frozen Food </a>
+                            <a href="#" target="_self"> Fruits </a>
+                            <a href="#" target="_self"> Gift Vouchers </a>
+                            <a href="#" target="_self"> Household Items </a>
+                            <a href="./Vegetables.html" target="_self"> Vegetables</a>
+                        </section>
+
+                    </section>
+
+                    <a href="./Order.html" target="_self"> Order </a>
+                    <a href="./Loyalty.html" target="_self"> Loyalty </a>
+
+                </section>
+
+                <br>
+            
+                <!--Social Media links-->
+
+                <section class="social">
+
+                    <!--Facebook Icon-->
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i>
+                    </a>
+
+                    <!--Instagram Icon-->
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+                    </a>
+
+                    <!--Twitter Icon-->
+                    <a href="#">
+                        <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+                    </a>
+
+                    <!--Tiktok Icon-->
+                    <a href="#">
+                        <i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff;"></i>
+                    </a>
+
+                </section>
+
+            </section>
+
+            <br>
+
+            <!--Copyright-->
+
+            <section class="copy">
+                <p> &copy; 2024 Grocies. All Rights Reserved. </p>
+            </section>
+
+        </section>   
+
+    </footer>
+
+</body>
+
+</html>

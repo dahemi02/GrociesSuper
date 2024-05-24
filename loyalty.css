@@ -1,0 +1,202 @@
+/*Loyalty page CSS*/
+
+/*Styling the placing of content in the page*/
+#intro-loyalty, #form, .terms{
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px 0;
+}
+
+/*Styling the Intro section*/
+#intro-loyalty p{
+    font-family: "Kanit", sans-serif;
+    font-weight: bold;
+    font-size: 18pt;
+    text-align: center;
+}
+
+/*Styling the Form section*/
+#form{
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fffdd0;
+}
+
+/*Styling the form-container*/
+.form-container{
+    padding: 5px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 18pt;
+}
+
+/*Centering the table*/
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Styling the input, textarea and select in form-container*/
+.form-container input, textarea, select{
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+/*Styling the Loyalty section*/
+#loyalty{
+    display: flex;
+    padding: 20px;
+}
+
+/*Styling the select options*/
+select option{
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+}
+
+/*Styling the loyalty-schemes section*/
+.loyalty-schemes{
+    background-color: #fffce0;
+    padding: 20px;
+    margin: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Styling the labels in the loyalty schemes section*/
+.loyalty-schemes label, .loyalty-schemes li{
+   font-size: 15pt;
+}
+
+/*Styling the list items in the loyalty-schemes section*/
+.loyalty-schemes label{
+    font-weight: bold;
+}
+
+/*Styling the border*/
+#form, .terms, .loyalty-schemes, .form-container input, textarea, select{
+    border: 5px solid #d3b683;
+}
+
+/*Styling the headings*/
+main h1, main h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #307236;
+}
+
+/*Styling the heading 1 & buttons text alignment*/
+main h1, .buttons {
+    text-align: center;
+} 
+
+/*Stling the heading 1 in intro-loyalty section*/
+#form h1{
+    font-size: 25pt;
+    font-weight: bold;
+    color: #000;
+}   
+
+/*Styling the Terms section*/
+.terms{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16pt;
+}
+
+/*Styling the buttons*/
+.buttons #submit, .buttons #clear-all{
+    padding: 10px 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+    color: #fff;
+    background-color: #000;
+    transition: all ease 0.5s;
+
+    /*Styling the buttons when the cursor hovers over it*/
+    &:hover{
+        background-color: #fff;
+        color: #000;
+    }
+}
+
+
+
+/*Mobile Responsiveness*/
+
+/*intro-loyalty section at 500px Responsiveness*/
+@media screen and (max-width: 500px) {
+
+    /*Banner*/
+    #intro-loyalty img{
+        height: 350px;
+    }
+}
+
+/*intro-loyalty section at 420px Responsiveness*/
+@media screen and (max-width: 420px) {
+
+    /*Banner*/
+    #intro-loyalty img{
+        height: 250px;
+    }
+}
+
+/*Loyalty Schemes at 650px Responsiveness*/
+@media screen and (max-width: 650px) {
+
+    /*loyalty class*/
+    #loyalty{
+        flex-direction: column;
+    }
+
+    /*Heading 3 in the form 7 label in the loyalty-schemes class*/
+    form h3,
+    .loyalty-schemes label{
+        font-size: 23pt;
+    }
+
+    /*Heading 3 & list items in loyalty-schemes class and list items in terms class*/
+    .loyalty-schemes h3,
+    .loyalty-schemes ul li,
+    .terms ol li{
+        font-size: 18pt;
+    }
+}
+
+/*Form-container at 630px Responsiveness*/
+@media screen and (max-width: 630px) {
+
+    /*Form Container*/
+    .form-container table tr td{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Form Container labels*/
+    .form-container label{
+        font-size: 25pt;
+    }
+}
+
+/*Form container input, textarea and select at 470px Responsiveness*/
+@media screen and (max-width: 470px) {
+    .form-container input,
+    .form-container textarea,
+    .form-container select{
+        width: 250px;
+    }
+}
+
+/*Form container input, textarea and select at 360px Responsiveness*/
+@media screen and (max-width: 360px) {
+    .form-container input,
+    .form-container textarea,
+    .form-container select{
+        width: 200px;
+    }
+}
