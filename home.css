@@ -1,0 +1,254 @@
+/*Home Page CSS*/
+
+/*Styling the main section*/
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+    z-index: -300;
+}
+
+/*Styling the slider section*/
+.slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: -500;
+}
+
+/*Styling the sliding-banner section*/
+.sliding-banner{
+    display: flex;
+    animation: slide 20s infinite alternate;
+}
+
+/*Styling the banner section*/
+.banner{
+    width: 100%;
+    flex: 1 0 100%;
+}
+
+/*Styling the images banner section*/
+.banner img{
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+/*Styling the banners with css animations*/
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-200%);
+    }
+    80% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/*Styling the Heading 1*/
+h1{
+    font-family: "Kanit", sans-serif;
+    font-weight: bold;
+    font-size: 25pt;
+    color: #000;
+    letter-spacing: 0.5px;
+}
+
+/*Styling the Add to Cart button*/
+.cart{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #78c57e;
+    font-family: "Platypi", serif;
+    letter-spacing: 0.8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: all ease 0.3s;
+
+    /*Styling the Add to Cart button when the cursor hovers */
+    &:hover{
+        background-color: #bde3c0;
+        transition: all ease 0.3s;
+    }
+}
+
+/*Styling the Sections in the Body*/
+#section {
+    display: flex;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*Styling the content in the Sections (Catgories & Favorites)*/
+.containers {
+    border: 3px solid #000;
+    border-radius: 10px;
+    background-color: #fffdd0;
+    flex: 5px;
+    margin: 5px;
+    padding: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15pt;
+    font-weight: 600;
+    font-display: flex;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.containers img{
+    margin: 0 auto;
+}
+
+/*Styling the links in the content of Sections*/
+.containers a{
+    color: black;
+    text-decoration: none;
+
+    /*Changing the color of the links when the cursor hovers over it*/
+    &:hover{
+        color: #78c57e;
+    }
+}
+
+/*Styling the content in the smaller sections (Services & Goals)*/
+.sect{
+    border: 3px solid #000;
+    background-color: cornsilk;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15pt;
+    padding: 30px;
+    margin: auto;
+}
+
+/*Styling the headings in the smaller sections*/
+.sect h1{
+    text-align: center;
+}
+
+/*Styling the images in the smaller sections*/
+.sect img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 300px;
+}
+
+
+
+/*Mobile Responsiveness*/
+
+/*Sliding Banner at 1280px Responsiveness*/
+@media (max-width: 1280px){
+    .slider{
+        width: 100%;
+    }
+}
+
+/*Sliding Banner at 425px Responsiveness*/
+@media (max-width: 425px){
+    .banner img{
+        width: 100%;
+        height: 170px;
+    }
+}
+
+/*Sections at 1350px Responsiveness*/
+@media screen and (max-width: 1350px) {
+
+    /*Heading 1*/
+    h1{
+        font-size: 3em;
+    }
+
+    /*section id*/
+    #section{
+        padding: 6px;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*containers class*/
+    .containers{
+        padding: 15px;
+        font-size: 2em;
+    }
+
+    /*Images in the containers class*/
+    .containers img{
+        width: 400px;
+        height: 450px;
+    }
+
+    /*Add to cart*/
+    .cart{
+        padding: 5px;
+    }
+
+    /*Sect class*/
+    .sect{
+        padding: 20px;
+    }
+
+    /*Heading 1 in sect class*/
+    .sect h1{
+        font-size: 2em;
+    }
+
+    /*Images in the sect class*/
+    .sect img{
+        width: 75%;
+        height: 450px;
+    }
+    
+    /*Lists in the sect class*/
+    .sect ul li,
+    .sect ol li{
+        font-size: 1.5em;
+    }
+}
+
+/*Sections at 425px Responsiveness*/
+@media screen and (max-width: 425px) {
+
+    /*Heading 1*/
+    h1{
+        font-size: 3.5em;
+    }
+
+    /*containers class*/
+    .containers{
+        padding: 20px;
+        font-size: 2.5em;
+    }
+
+    /*Images in the containers class*/
+    .containers img{
+        width: 200px;
+        height: 250px;
+    }
+
+    /*Images in the sect class*/
+    .sect img{
+        width: 100%;
+        height: 250px;
+    }
+    
+}
