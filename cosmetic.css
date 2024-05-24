@@ -1,0 +1,121 @@
+/*Cosmetic & Skin Care page CSS*/
+
+/*Styling the main section*/
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/*Styling the Headings outside the table*/
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 40px; 
+    font-style: italic;
+    color: #000;
+}
+
+/*Styling the text in the table*/
+table thead{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*Styling the table body*/
+table tbody td{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 10px;
+    background-color: #fffdd0;
+    padding: 3px;
+}
+
+/*Styling the links in the table body*/
+table tbody td a{
+    font-family: "Platypi", serif;
+    font-size: 18pt;
+    color: #000000;
+}
+
+/*Add to cart button*/
+.cart{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #78c57e;
+    text-decoration: none;
+    letter-spacing: 0.8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: all ease 0.3s;
+
+    /*Styling the Add to Cart button when the cursor hovers */
+    &:hover{
+        background-color: #bde3c0;
+        transition: all ease 0.3s;
+    }
+}
+
+
+
+/*Mobile Responsiveness*/
+
+/*intro-cosmetics section at 768px Responsiveness*/
+@media screen and (max-width: 768px) {
+    .intro-cosmetics img{
+        width: 100%;
+        height: 350px;
+    }
+}
+
+/*intro-cosmetics section at 768px Responsiveness*/
+@media screen and (max-width: 768px) {
+    .intro-cosmetics img{
+        height: 250px;
+    }
+}
+
+/*product-table at 1168px Responsiveness*/
+@media screen and (max-width: 1168px) {
+
+    .product-table table{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    table thead tr td{
+        font-size: 2em;
+    }
+
+    .product-table table tbody tr td{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: row wrap;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .product-table table tbody tr td img{
+        width: 500px;
+        height: 450px;
+    }
+
+    .product-table table tbody tr td,
+    .cart{
+        font-size: 2rem;
+    }
+}
+
+/*product-table at 650px*/
+@media screen and (max-width: 650px) {
+    .product-table table tbody tr td img{
+        width: 300px;
+        height: 250px;
+    }
+}

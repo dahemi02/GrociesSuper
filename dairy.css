@@ -1,0 +1,143 @@
+/*Dairy Products CSS*/
+
+/*Styling the main section*/
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/*Add to cart button*/
+.cart{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #78c57e;
+    font-family: "Platypi", serif;
+    font-size: 18pt;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: 0.8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: all ease 0.3s;
+
+    /*Styling the Add to Cart button when the cursor hovers */
+    &:hover{
+        background-color: #bde3c0;
+        transition: all ease 0.3s;
+    }
+}
+
+/*Styling the dairy section*/
+.dairy{
+    display: flex;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 15pt;
+    color: #000;
+}
+
+/*Styling the products and sub-products sections*/
+#products, #sub-products{
+    border: 3px solid #000;
+    border-radius: 10px;
+    background-color: #fffdd0;
+    flex: 5px;
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
+}
+
+/*Styling the sub-products section*/
+#sub-products{
+    padding: 10px;
+    margin: 5px;
+}
+
+/*Styling the heading 1 & heading 2*/
+main h1, main h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+
+/*Styling the heading 1 7 2 in the main section and heading 3 intro-dairy class*/
+main h1, main h2, .intro-dairy h3{
+    color: #000;
+}
+
+/*Styling the heading 1*/
+main h1{
+    font-size: 30pt;
+}
+
+/*Styling the heading 2*/
+main h2{
+    font-size: 20pt;
+}
+
+/*Styling the heading 3*/
+main h3{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 18pt;
+    text-align: center;
+}
+
+
+
+/*Mobile Responsiveness*/
+
+/*Responsiveness at 768px*/
+@media screen and (max-width: 768px){
+
+    /*Image in the intro-dairy class*/
+    .intro-dairy img{
+        height: 300px;
+    }
+
+    /*Heading 3 in intro-dairy*/
+    .intro-dairy h3{
+        font-size: 25pt;
+    }
+
+    /*Products in products class & sub-product class */
+    .dairy{
+        flex-direction: column;
+    }
+
+    main h2{
+        font-size: 20pt;
+    }
+
+    /*images in products id and sub-products id*/
+    #products img,
+    #sub-products img{
+        width: 250px;
+        height: 350px;
+    }
+
+    /*Paragraphs in products id and sub-products id*/
+    .dairy #products p,
+    .dairy #sub-products p{
+        font-size: 26pt;
+    }
+
+    /*Add to Cart*/
+    .dairy #products .cart,
+    .dairy #sub-products .cart{
+        font-size: 30pt;
+    }
+
+}
+
+/*Images in products id and sub-products id*/
+@media screen and (max-width: 370px) {
+    .dairy #products img,
+    .dairy #sub-products img{
+        width: 225px;
+        height: 300px;
+    }
+}
