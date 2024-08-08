@@ -1,5 +1,3 @@
-/*Order Page CSS*/
-
 /*Styling the placing of content in the page*/
 main{
     width: 90%;
@@ -7,122 +5,176 @@ main{
     padding: 10px 0;
 }
 
-/*Centering the table*/
-table{
-    margin-left: auto;
-    margin-right: auto;
+/*Styling the images*/
+img{
+    width: 200px;
+    height: 200px;
 }
 
-/*Styling the text alignment in headings in the order-form section and payment and button sections*/
-.order-form h1, .order-form h2, .payment, .button{
-    text-align: center;
-}
-
-/*Styling the border*/
-.order-form .billing input, textarea, 
-.payment .payment-methods input,
-.payment-details table tr td input{
-    border: 5px solid #d3b683;
-}
-
-/*Styling the billing and the payment sections*/
-.billing, .payment{
-    font-family: "Open Sans", sans-serif;
-    font-weight: 600;
-    font-size: 18pt;
-}
-
-/*Styling the input & textarea in the table*/
-table input, table textarea{
-    margin: 10px;
-    padding: 10px;
-    width: 100%;
-}
-
-/*Styling the heading 1 & heading 2 in the order-form section*/
-.order-form h1, .order-form h2{
+/*Styling Order section*/
+.order,
+.items select option{
+    display: flex;
+    padding: 20px;
     font-family: "Poppins", sans-serif;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 15pt;
     color: #000;
 }
 
-/*Styling the heading 3 in the order-form section*/
-.order-form h1{
-    font-size: 35pt;
-}
-
-/*Styling the headng 2 in order-form section*/
-.order-form h2{
-    font-size: 25pt;
-}
-
-/*Styling the order-form section*/
-.order-form{
-    background-color: #fffdd0;
-    padding: 20px;
+/*Styling the items*/
+.items{
     border: 3px solid #000;
+    border-radius: 10px;
+    background-color: #fffdd0;
+    flex: 5px;
+    padding: 5px;
+    margin: 3px;
+    text-align: center;
 }
 
-/*Styling the checkout button*/
-form button{
-    padding: 10px 15px;
+/*Styling heading 1*/
+h1{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+
+.show{
+    display: block;
+}
+
+/*Styling the table*/
+table{
+    width: 100%;
+    padding: 20px;
+
+}
+
+/*Styling the table head and table data */
+thead, td{
+    border: 3px solid #5bb963;
+    text-align: center;
+}
+
+
+/*Styling the table head text*/
+table thead tr td{
+    font-size: 18pt;
+    font-weight: 600;
+}
+
+/*Styling the text in table data*/
+td{
+    font-size: 15pt;
+}
+
+/*Styling the text in the table data in the table footer*/
+tfoot tr td{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+button{
+    padding: 10px;
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     font-size: 16pt;
     color: #000;
-    background-color:#fff ;
-    transition: all ease 0.3s;
+    background-color: #fff;
+    transition: all ease 0.5s;
+    display: block;
+    margin: auto;
 
-    /*Add to Cart when cursor hovers over it*/
+    /*Styling the buttons when the cursor hovers over it*/
     &:hover{
-        color: #fff;
-        background-color: #000;
-        transition: all ease 0.3s;
+        background-color: #fffdd0;
+        color: #000;
     }
 }
 
+/*Styling the add to favorites & apply favorites buttons*/
+.Favbuttons{
+    display: flex;
+}
 
 
 /*Mobile Responsiveness*/
-@media screen and (max-width: 650px) {
 
-    /*Labels in billing, payment-methods, payment-details classes*/
-    .billing label,
-    .payment .payment-methods input,
-    .payment-details label{
-        font-size: 23pt;
+/*Responsiveness at 1220px*/
+@media screen and (max-width: 1220px) {
+
+    /*Styling the placing of content in the page*/
+    main{
+        width: 95%;
+        padding: 5px 0;
     }
 
-    /*Width of the input*/
-    .billing input,
-    .billing textarea,
-    .payment-details table tr td input{
-        width: 250px;
+    /*Styling the images*/
+    img{
+        width: 150px;
+        height: 150px;
     }
-
 }
 
-/*Table data at 540px Responsiveness*/
-@media screen and (max-width: 540px) {
+/*Responsiveness at 1030px*/
+@media screen and (max-width: 1030px) {
 
-    .billing table tr td,
-    .payment-details table tr td{
-        display: flex;
+    /*Styling the margin of the page*/
+    main{
+       margin: 10px 5px;
+    }
+
+    /*Styling Order section*/
+    .order,
+    .items select option{
+        padding: 10px;
+        
+    }
+}
+
+/*Responsiveness at 1000px*/
+@media screen and (max-width: 1000px) {
+
+    /*Styling the items section*/
+    .items{
+        flex: 3px;
+        padding: 2px;
+        margin: 1px;
+    }
+}
+
+/*Responsiveness at 970px*/
+@media screen and (max-width: 970px) {
+
+    /*Styling the order section*/
+    .order{
         flex-direction: column;
     }
-
 }
 
-/*Width*/
-@media screen and (max-width: 380px) {
+/*Table at 430px Responsiveness*/
+@media screen and (max-width: 430px) {
+
+    /*Styling the table*/
+    table{
+        margin: 0;
+        padding: 10px;
+    }
     
-    /*Width of the input*/
-    .billing input, 
-    .billing textarea,
-    .payment-details table tr td input{
-        width: 175px;
+    /*Styling the table head and table foot*/
+    table thead tr td,
+    table tfoot tr td{
+        font-size: 12pt;
     }
 
-    
+    /*Styling the table body*/
+    table tbody tr td{
+        font-size: 10pt;
+    }
 
+    /*Styling the buttons*/
+    button{
+        font-size: 13pt;
+        padding: 5px;
+    }
 }

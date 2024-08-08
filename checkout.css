@@ -1,0 +1,240 @@
+/*Order Page CSS*/
+
+/*Styling the placing of content in the page*/
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/*Centering the table*/
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Styling the text alignment in headings in the order-form section and payment and button sections*/
+h1, 
+h2, 
+h3, 
+.order-details, 
+.payment, 
+.button{
+    text-align: center;
+}
+
+/*Styling the heading 1, 2 & 3*/
+h1, 
+h2,  
+h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+/*Styling the heading 1 & 2*/
+h1, 
+h2{
+    font-size: 35pt;
+}
+
+/*Styling the headng 3*/
+h3{
+    font-size: 25pt;
+}
+
+/*Styling the order details, billing and the payment sections*/
+.order-details, 
+.billing, 
+.payment{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18pt;
+}
+
+/*Styling the order-details section table head*/
+.order-details table thead tr td{
+    font-weight: 700;
+    
+}
+
+/*Styling the order-details section table body*/
+.order-details table tbody tr td{
+    padding: 10px 30px;
+    
+}
+
+/*Styling the order-details table footer*/
+.order-details table tfoot tr td{
+    font-style: italic;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/*Styling the order-details border */
+.order-details{
+    border: 4px solid;
+}
+
+/*Styling the order-form section*/
+.order-form{
+    background-color: #fffdd0;
+    padding: 20px;
+    border: 3px solid #000;
+}
+
+/*Styling the border*/
+.order-form .billing input, 
+textarea, 
+.payment .payment-methods input,
+.payment-details table tr td input{
+    border: 5px solid #d3b683;
+}
+
+/*Styling the input & textarea in the table*/
+table input, 
+table textarea{
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+/*Styling the checkout button*/
+form button{
+    padding: 10px 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+    color: #000;
+    background-color:#fff ;
+    transition: all ease 0.3s;
+
+    /*Add to Cart when cursor hovers over it*/
+    &:hover{
+        color: #fff;
+        background-color: #000;
+        transition: all ease 0.3s;
+    }
+}
+
+
+
+/*Mobile Responsiveness*/
+
+/*Responsiveness at 650px*/
+@media screen and (max-width: 650px) {
+
+    /*Labels in billing, payment-methods, payment-details classes*/
+    .billing label,
+    .payment .payment-methods input,
+    .payment-details label{
+        font-size: 16pt;
+    }
+
+    /*Width of the input*/
+    .billing input,
+    .billing textarea,
+    .payment-details table tr td input{
+        width: 250px;
+    }
+
+}
+
+/*Order details table at 560px Responsiveness*/
+@media screen and (max-width: 560px) {
+
+    /*Styling the table*/
+    .order-details table{
+        margin: 0;
+        padding: 10px;
+    }
+    
+    /*Styling the table head and table foot*/
+    .order-details table thead tr td,
+    .order-details table tfoot tr td{
+        font-size: 15pt;
+    }
+
+    /*Styling the table body*/
+    .order-details table tbody tr td{
+        font-size: 13pt;
+    }
+
+}
+
+/*Table data at 540px Responsiveness*/
+@media screen and (max-width: 540px) {
+
+    .billing table tr td,
+    .payment-details table tr td{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/*Order details table at 470px Responsiveness*/
+@media screen and (max-width: 470px) {
+
+    /*Styling the table*/
+    .order-details table{
+        padding: 5px;
+    }
+    
+    /*Styling the table head and table foot*/
+    .order-details table thead tr td,
+    .order-details table tfoot tr td{
+        font-size: 13pt;
+    }
+
+    /*Styling the table body*/
+    .order-details table tbody tr td{
+        font-size: 11pt;
+    }
+
+}
+
+/*Order details table at 410px Responsiveness*/
+@media screen and (max-width: 410px) {
+    
+    /*Styling the table head and table foot*/
+    .order-details table thead tr td,
+    .order-details table tfoot tr td{
+        font-size: 12pt;
+    }
+
+    /*Styling the table body*/
+    .order-details table tbody tr td{
+        font-size: 10pt;
+    }
+
+}
+
+/*Responsiveness at 380px*/
+@media screen and (max-width: 380px) {
+    
+    /*Width of the input*/
+    .billing input, 
+    .billing textarea,
+    .payment-details table tr td input{
+        width: 175px;
+    }
+
+    /*Styling the order-details section table body*/
+    .order-details table tbody tr td{
+        padding: 5px 20px;
+        
+    }
+
+    /*Styling the table head and table foot*/
+    .order-details table thead tr td,
+    .order-details table tfoot tr td{
+        font-size: 11pt;
+    }
+
+    /*Styling the table body*/
+    .order-details table tbody tr td{
+        font-size: 9pt;
+    }
+
+}

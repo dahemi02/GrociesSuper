@@ -16,6 +16,8 @@
     <!--Stylesheets-->
     <link rel="stylesheet" href="./style.css" type="text/css">
     <link rel="stylesheet" href="./order.css" type="text/css">
+
+
 </head>
 
 <body>
@@ -87,150 +89,1648 @@
         
         <br>
 
-        <!--Section of the Order Form-->
-        <section class="order-form">
+        <section>
+            <h1> Order page </h1>
+            <p> Maybe a banner...? Probaly </p>
+        </section>
 
-            <h1> Billing Details </h1>
+        <form id="orderForm">
+            <!--Fruits-->
+            <h1> Fruits </h1>
 
-            <!--Order Form-->
-            <form action="#" method="post">
-                
-                <!-- Table for Billing Details-->
-                <section class="billing">
+            <section class="order">
 
-                    <table>
+                <section class="items">
 
-                        <!--Full Name-->
-                        <tr>
-    
-                            <td> <label for="fullname"> Full Name </label> </td>
-                            <td> <input type="text" name="fullname" size="20" required> </td>   
-    
-                        </tr>
-    
-                        <!--Email Address-->
-                        <tr>
-    
-                            <td> <label for="email"> Email Address </label> </td>
-                            <td> <input type="email" name="email" required> </td>
-    
-                        </tr>
-    
-                        <!--Phone Number-->
-                        <tr>
-    
-                            <td> <label for="phone"> Phone Number </label> </td>
-                            <td> <input type="tel" name="phone" required> </td>
-    
-                        </tr>
-    
-                        <!--Address-->
-                        <tr>
-    
-                            <td> <label for="address"> Address </label> </td>
-                            <td> <textarea name="address" cols="30" rows="3" required></textarea> </td>
-                            
-                        </tr>
-    
-                        <!--Zip Code-->
-                        <tr>
-    
-                            <td> <label for="zipcode"> Zip Code </label> </td>
-                            <td> <input type="text" name="zipcode" size="20" required> </td>   
-    
-                        </tr>
-    
-                    </table>
+                    <!--Product Details-->
 
-                </section>
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./apples.png" alt="Apples">
+                    </section>
 
-                <br>
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Apples </p>
+                    </section>
 
-                <h2> Payment Method </h2>
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 500.00 </p>
+                    </section>
 
-                <!--Section for the Payment Method-->
-                <section class="payment">
-
-                    <!--Payment Method-->
-                    <section class="payment-method">
-
-                        <input type="radio" name="cod" value="d">
-                        <label for="cod"> Cash On Delvery </label>
-
-                        <input type="radio" name="card" value="c">
-                        <label for="card"> Card Payment </label>
-
-                        <br>
-                        <br>
-
-                        <!--Table for the Payment Methods-->
-                        <section class="payment-details">
-
-                            <table>
-        
-                                <!--Cards Accepted-->
-                                <tr>
-            
-                                    <td> <label for="cards"> Cards Accepted :  </label> </td>
-                                    <td> <img src="./Credit-Card-Icons.jpg" alt="Card Icons" width="250" height="50"> </td>
-            
-                                </tr>
-            
-                                <!--Name on the Card-->
-                                <tr>
-            
-                                    <td> <label for="name"> Name on the Card </label> </td>
-                                    <td> <input type="text" name="name" size="20"> </td>   
-            
-                                </tr>
-            
-                                <!--Card Number-->
-                                <tr>
-            
-                                    <td> <label for="creditcard"> Card Number </label> </td>
-                                    <td> <input type="number" name="creditcard" placeholder="1111-2222-3333-4444" size="20"> </td>   
-            
-                                </tr>
-            
-                                <!--Expiry Date-->
-                                <tr>
-            
-                                    <td> <label for="dob"> Expiry Date </label> </td>
-                                    <td> <input type="date" name="dob"> </td>  
-            
-                                </tr>
-            
-                                <!--CVV-->
-                                <tr>
-            
-                                    <td> <label for="cvv"> CVV </label> </td>
-                                    <td> <input type="number" name="cvv" placeholder="1234" size="20"> </td>   
-            
-                                </tr>
-            
-                            </table>
-                            
-                        </section>
-    
-    
+                    <!--Quantity-->
+                    <section>
+                        <label for="apple">
+                            Quantity of Apples (in kg) : <input type="number" class="quantity" id="apple" name="fruits" min="0" step="0.1">
+                        </label>
                     </section>
 
                 </section>
 
                 <br>
 
-                <!--Checkout Button-->
-                <section class="button">
+                <section class="items">
 
-                    <button type="submit"> Proceed to Check Out </button>
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./mango.png" alt="Mango">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Mango </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 1250.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="mango">
+                            Quantity of Mango (in kg) : <input type="number" class="quantity" id="mango" min="0" step="0.1">
+                        </label>
+                    </section>
 
                 </section>
 
                 <br>
 
-            </form>
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./banana.png" alt="Banana">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Banana </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 350.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="banana">
+                            Quantity of Banana (in kg) : <input type="number" class="quantity" id="banana" min="0" step="0.1">
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./papaya.png" alt="Papaya">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Papaya </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 300.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="papaya">
+                            Quantity of Papaya (in kg) : <input type="number" class="quantity" id="papaya" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./guava.png" alt="Guava">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Guava </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 420.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="guava">
+                            Quantity of Guava (in kg) : <input type="number" class="quantity" id="guava" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+            </section>
+
+            <br>
+            
+            <!--Fruits-->
+            <section class="order">
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./dragon_fruit.png" alt="Dragon Fruits">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Dragon Fruit </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 1800.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="dragon-fruit">
+                            Quantity of Dragon Fruit (in kg) : <input type="number" class="quantity" id="dragon-fruit" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./rambuttan.png" alt="Rambuttan">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Rambuttan </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 330.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="rambuttan">
+                            Quantity of Rambuttan (in kg) : <input type="number" class="quantity" id="rambuttan" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./avocado.png" alt="Avocado">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Avocado </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 650.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="avocado">
+                            Quantity of Avocado (in kg) : <input type="number" class="quantity" id="avocado" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./orange.png" alt="Orange">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Orange </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 180.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="orange">
+                            Quantity of Orange (in kg) : <input type="number" class="quantity" id="orange" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./strawberry.png" alt="Strawberry">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Strawberry </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 975.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="strawberry">
+                            Quantity of Strawberry (in kg) : <input type="number" class="quantity" id="strawberry" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+            </section>
+
+            <br>
+            <br>
+
+            <!--Vegetables-->
+            <h1>Vegetables</h1>
+
+            <section class="order">
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./carrots.png" alt="Carrots">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Carrots </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 100.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="carrots">
+                            Quantity of Carrots (in kg) : <input type="number" class="quantity" id="carrots" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./beans.png" alt="Beans">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Beans </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 320.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="beans">
+                            Quantity of Beans (in kg) : <input type="number" class="quantity" id="beans" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./cabbage.png" alt="Cabbage">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Cabbage </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 150.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="cabbage">
+                            Quantity of Cabbage (in kg) : <input type="number" class="quantity" id="cabbage" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./beetroot.png" alt="Beetroot">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Beetroot </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 120.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="beetroot">
+                            Quantity of Beetroot (in kg) : <input type="number" class="quantity" id="beetroot" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./curry-leaves.png" alt="Curry Leaves">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Curry Leaves </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 60.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="curry-leaves">
+                            Quantity of Curry Leaves (in kg) : <input type="number" class="quantity" id="curry-leaves" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+            </section>
+
+            <br>
+
+            <!--Vegetables-->
+
+            <section class="order">
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./Brinjal.png" alt="Brinjal">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Brinjal </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 120.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="brinjal">
+                            Quantity of Brinjal (in kg) : <input type="number" class="quantity" id="brinjal" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./pumpkin.png" alt="Pumpkin">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Pumpkin </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 150.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="pumpkin">
+                            Quantity of Pumpkin (in kg) : <input type="number" class="quantity" id="pumpkin" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./cucumber.png" alt="Cucumber">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Cucumber </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 130.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="cucumber">
+                            Quantity of Cucumber (in kg) : <input type="number" class="quantity" id="cucumber" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./bitter-gourd.png" alt="Bitter Gourd">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Bitter Gourd </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 180.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="bitter-gourd">
+                            Quantity of Bitter Gourd (in kg) : <input type="number" class="quantity" id="bitter-gourd" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./winged-bean.png" alt="Winged Bean">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Winged Bean </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 180.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="winged-bean">
+                            Quantity of Winged Bean (in kg) : <input type="number" class="quantity" id="winged-bean" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+            </section>
+
+            <br>
+            <br>
+
+            <!--Dairy Produce-->
+            <h1> Dairy Produce </h1>
+
+            <section class="order">
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./milk1.png" alt="Milk">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Milk </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 980.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="milk">
+                            Quantity of Milk (in ltrs) : <input type="number" class="quantity" id="milk" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./Butter1.png" alt="Butter">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Butter </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 180.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="butter">
+                            Quantity of Butter (in kg) : <input type="number" class="quantity" id="butter" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./Cheese3.png" alt="Cheese">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Cheese </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 350.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="cheese">
+                            Quantity of Cheese (in kg) : <input type="number" class="quantity" id="cheese" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./Ice-cream3.png" alt="Ice-Cream">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Ice Cream </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 975.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="ice-cream">
+                            Quantity of Ice Cream (in ltrs) : <input type="number" class="quantity" id="ice-cream" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./Eggs1.png" alt="Eggs">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Eggs </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 54.50 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="eggs">
+                            Quantity of Eggs (no of) : <input type="number" class="quantity" id="eggs" min="0" step="1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+            </section>
+
+            <br>
+
+            <!--Dairy Produce-->
+
+            <section class="order">
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./Yogurt1.png" alt="Yogurt">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Yogurt </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 70.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="yogurt">
+                            Quantity of Yogurt (in ltrs) : <input type="number" class="quantity" id="yogurt" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./Soy Milk5.png" alt="Soy Milk">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Soy Milk  </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 870.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="soy-milk">
+                            Quantity of Soy Milk (in ltrs) : <input type="number" class="quantity" id="soy-milk" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./Vegan Cheese3.png" alt="Vegan Cheese">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Dairy-Free Cheese </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 550.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="vegan-cheese">
+                            Quantity of Vegan Cheese (in kg) : <input type="number" class="quantity" id="vegan-cheese" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./Vegan Yogurt1.png" alt="Vegan Yogurt">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Dairy-Free Yogurt </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 180.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="vegan-yogurt">
+                            Quantity of Vegan Yogurt (in ltrs) : <input type="number" class="quantity" id="vegan-yogurt" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./Vegan Ice Cream4.png" alt="WVegan Ice Cream">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Dairy-Free Ice Cream </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 1000.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="vegan-ice-cream">
+                            Quantity of Vegan Ice Cream (in ltrs) : <input type="number" class="quantity" id="vegan-ice-cream" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+            </section>
+
+            <br>
+            <br>
+
+            <!--Meat-->
+            <h1> Meat </h1>
+
+            <section class="order">
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./chicken breast.png" alt="Chicken Breast">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Chicken Full Breast </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 1980.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="chicken-breast">
+                            Quantity of Chicken Breast (in kg) : <input type="number" class="quantity" id="chicken-breast" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./chicken thigh.png" alt="Chicken Thigh">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Chicken Thigh </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 2010.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="chicken-thigh">
+                            Quantity of Chiken Thigh (in kg) : <input type="number" class="quantity" id="chicken-thigh" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./Beef-Topside.png" alt="Beef Topside">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Beef Topside </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 350.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="beef-topside">
+                            Quantity of Beef Topside (in kg) : <input type="number" class="quantity" id="beef-topside" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./pork chops.png" alt="Pork Chops">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Pork Chops </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 3200.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="pork-chops">
+                            Quantity of Pork Chops (in kg) : <input type="number" class="quantity" id="pork-chops" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./lamb leg.png" alt="Lamb Leg">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Lamb Leg </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 4990.50 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="lamb-leg">
+                            Quantity of Lamb Leg (in kg) : <input type="number" class="quantity" id="lamb-leg" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+            </section>
+
+            <br>
+            <br>
+
+            <!--Seafood-->
+            <h1> Seafood </h1>
+
+            <section class="order">
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./salmon.png" alt="Salmon">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Salmon </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 2190.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="salmon">
+                            Quantity of Salmon (in kg) : <input type="number" class="quantity" id="salmon" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./cod fish.png" alt="Cod Fish">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Cod Fish </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 3490.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="codfish">
+                            Quantity of Cod Fish (in kg) : <input type="number" class="quantity" id="codfish" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./shrimp.png" alt="Shrimp">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Shrimp </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 4360.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="shrimp">
+                            Quantity of Shrimp (in kg) : <input type="number" class="quantity" id="shrimp" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./lobster.png" alt="Lobster">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Lobster </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 2040.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="lobster">
+                            Quantity of Lobster (in kg) : <input type="number" class="quantity" id="lobster" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./crab.png" alt="Crab">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Crab </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 3500.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="crab">
+                            Quantity of Crab (in kg) : <input type="number" class="quantity" id="crab" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+            </section>
+
+            <br>
+            <br>
+
+            <!--Baking & Cooking Ingredients-->
+            <h1> Baking & Cooking Ingredients </h1>
+
+            <section class="order">
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./Coconut Oil.png" alt="Coconut Oil">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Coconut Oil </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 1400.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="coconut-oil">
+                            Quantity of Coconut Oil (in ltrs) : <input type="number" class="quantity" id="coconut-oil" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./sunflower oil.png" alt="Sunflower Oil">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Sunflower Oil </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 1850.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="sunflower-oil">
+                            Quantity of Sunflower Oil (in ltrs) : <input type="number" class="quantity" id="sunflower-oil" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./turmeric powder.png" alt="Turmeric Powder">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Turmeric Powder </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 150.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="turmeric-powder">
+                            Quantity of Turmeric Powder (in g) : <input type="number" class="quantity" id="turmeric-powder" min="0" step="50"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./Chilli Powder.png" alt="Chilli Powder">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Chilli Powder </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 140.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="chilli-powder">
+                            Quantity of Chilli Powder (in g) : <input type="number" class="quantity" id="chilli-powder" min="0" step="50"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./baking powder.png" alt="Baking Powder">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Baking Powder </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 150.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="baking-powder">
+                            Quantity of Baking Powder (in g) : <input type="number" class="quantity" id="baking-powder" min="0" step="50"> 
+                        </label>
+                    </section>
+
+                </section>
+
+            </section>
+
+            <br>
+
+            <!--Baking & Cooking Ingredients-->
+
+            <section class="order">
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./flour.png" alt="Flour">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Flour </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 480.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="flour">
+                            Quantity of Flour (in kg) : <input type="number" class="quantity" id="flour" min="0" step="0.1"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./salt.png" alt="Salt">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Salt </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 100.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="salt">
+                            Quantity of Salt (in g) : <input type="number" class="quantity" id="salt" min="0" step="50"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./sugar.png" alt="Sugar">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Sugar </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 47.50 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="sugar">
+                            Quantity of Sugar (in g) : <input type="number" class="quantity" id="sugar" min="0" step="100"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./soy sauce.png" alt="Soy Sauce">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Soy Sauce </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 180.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="soy-sauce">
+                            Quantity of Soy Sauce (in ml) : <input type="number" class="quantity" id="soy-sauce" min="0" step="50"> 
+                        </label>
+                    </section>
+
+                </section>
+
+                <br>
+
+                <section class="items">
+
+                    <!--Product Details-->
+
+                    <!--Image-->
+                    <section class="image">
+                        <img src="./vinegar.png" alt="Vinegar">
+                    </section>
+
+                    <!--Name-->
+                    <section>
+                        <p class="name"> Vinegar </p>
+                    </section>
+
+                    <!--Unit Price-->
+                    <section>
+                        <p class="unitPrice"> Rs. 200.00 </p>
+                    </section>
+
+                    <!--Quantity-->
+                    <section>
+                        <label for="vinegar">
+                            Quantity of Quantity of Vinegar (in ml) : <input type="number" class="quantity" id="vinegar" min="0" step="50"> 
+                        </label>
+                    </section>
+
+                </section>
+
+            </section>
+
+            <br>
+            <br>
+
+            <section>
+                <button type="submit" id="cart" name="cart"> Add to Cart </button>
+            </section>
+
+        </form>
+
+        <br>
+        <br>
+        <br>
+
+        <!--Cart-->
+        <h1> Cart </h1>
+
+        <!--Cart Table-->
+        <table id="cart-table">
+
+            <thead>
+
+                <tr>
+                    <td> Item </td>
+                    <td> Quantity (kg/g/ltr/ml) </td>
+                    <td> Unit Price (Rs.) </td>
+                    <td> Price (Rs.) </td>
+                </tr>
+
+            </thead>
+
+            <tbody id="tableBody">
+                <!--Items to be added-->
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="3"> Total Price </td>
+                    <td id="total"> 0.00 </td>
+                </tr>
+            </tfoot>
+
+        </table>
+
+        
+
+        <br>
+
+        <!--Buy Now Button-->
+        <section>
+
+            <!--Buy Now-->
+            <button type="button" id="buy"> Buy Now </button>
 
         </section>
+
+        <br>
+
+        <!-- Fvaorites Buttons-->
+        <section class="Favbuttons">
+
+            <!--Add to Favorites-->
+            <button type="button" id="addFav"> Add to Favorites </button>
+
+            <!--Apply Favorites-->
+            <button type="button" id="applyFav"> Apply Favorites</button>
+
+        </section>
+
+        
 
     </main>
 
@@ -297,7 +1797,7 @@
 
                     </section>
 
-                    <a href="./Order.html" target="_self"> Order </a>
+                    <a href="./Payment.html" target="_self"> Order </a>
                     <a href="./Loyalty.html" target="_self"> Loyalty </a>
 
                 </section>
@@ -343,6 +1843,9 @@
         </section>   
 
     </footer>
+
+    <!--Linking avaScript-->
+    <script src="order.js"></script>
 
 </body>
 
