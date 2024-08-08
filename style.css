@@ -124,7 +124,7 @@ footer{
 }
 
 footer, .footer-logo a, #contct h3{
-    color: #fff;
+    color: #000;
 }
 
 /*Styling the Logo and the name*/
@@ -234,13 +234,24 @@ footer, .footer-logo a, #contct h3{
     }
 }
 
-/*earch Bar at 425px Responsiveness*/
-@media screen and (max-width: 425px) {
+/*Search Bar and Footer at 435px Responsiveness*/
+@media screen and (max-width: 435px) {
 
     .search input{
         width: 150px;
         padding: 8px;
     }
+
+    /*Footer heading 2*/
+    footer h2{
+        font-size: 18pt;
+    }
+
+    /*Footer heading 3*/
+    footer #contact h3{
+        font-size: 16pt;
+    }
+
 }
 
 /*Responsive Navigation Bar*/
@@ -249,7 +260,7 @@ footer, .footer-logo a, #contct h3{
     /*Navigation Bars in the header and the footer*/
     nav{
         flex-direction: column;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     /*Dropdown menu*/
@@ -266,7 +277,7 @@ footer, .footer-logo a, #contct h3{
     .footer-container{
         display: flex;
         flex-direction: column;
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     /*Text in the footer-nav*/
@@ -275,7 +286,7 @@ footer, .footer-logo a, #contct h3{
     }
 
     /*copy class in the footer*/
-    .copy{
-        font-size: 20pt;
+    .copy p{
+        font-size: 10pt;
     }
 }
